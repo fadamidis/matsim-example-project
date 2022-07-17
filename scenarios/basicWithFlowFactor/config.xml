@@ -18,6 +18,13 @@
         <param name="mobsim" value="qsim"/>
     </module>
 
+    <module name="qsim">
+        <param name="startTime" value="00:00:00"/>
+        <param name="endTime" value="30:00:00"/>
+        <param name="flowCapacityFactor" value="0.01"/>
+        <param name="storageCapacityFactor" value="0.01"/>
+    </module>
+
     <module name="planCalcScore">
             <parameterset type="activityParams">
                 <param name="activityType"    value="h" /> <!-- home -->
