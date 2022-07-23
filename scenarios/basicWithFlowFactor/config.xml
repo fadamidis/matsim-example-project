@@ -48,7 +48,7 @@
         <param name="maxAgentPlanMemorySize" value="5" /> <!-- 0 means unlimited -->
 
         <parameterset type="strategysettings">
-            <param name="strategyName" value="BestScore"/>
+            <param name="strategyName" value="SelectRandom"/>
             <param name="weight" value="0.9"/>
         </parameterset>
 
