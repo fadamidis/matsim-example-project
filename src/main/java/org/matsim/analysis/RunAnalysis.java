@@ -8,7 +8,7 @@ public class RunAnalysis {
 
         // Read scenario
         EventsManager eventsManager = EventsUtils.createEventsManager();
-        SimpleEventsHandler handler = new SimpleEventsHandler();
+        SimpleEventsHandler handler = new SimpleEventsHandler(); // name of the events handler
         eventsManager.addHandler(handler);
 
         EventsUtils.readEvents(eventsManager, "/Users/adfil/Documents/MATSim/matsim-example-project/output/basic/output_events.xml.gz");
