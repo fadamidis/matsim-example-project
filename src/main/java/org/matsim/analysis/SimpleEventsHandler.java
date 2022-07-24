@@ -18,7 +18,7 @@ public class SimpleEventsHandler implements ActivityStartEventHandler, ActivityE
     public void handleEvent(ActivityEndEvent activityEndEvent) {
 
         personToStartTime.put(activityEndEvent.getPersonId(), activityEndEvent.getTime());
-        System.out.println("Person" + activityEndEvent.getPersonId().toString() + " finished activity at " + activityEndEvent.getTime());
+        System.out.println("Person" + activityEndEvent.getPersonId().toString() + " finished activity " + activityEndEvent.getActType() +  " at " + activityEndEvent.getTime());
     }
 
     @Override

@@ -1,0 +1,59 @@
+2022-07-24T22:04:39,326  WARN PrepareForSimImpl:220 'usePersonIdForMissingVehicleId' is deprecated. It will be removed soon.
+2022-07-24T22:04:39,383  WARN PreProcessEuclidean:59 There are links with stored length smaller than their Euclidean distance in this network. Thus, A* cannot guarantee to calculate the least-cost paths between two nodes.
+2022-07-24T22:04:39,651  WARN RandomizingTimeDistanceTravelDisutilityFactory:112 There will be no routing randomness. The randomization of the travel disutility requires the monetary distance rate to be different than zero. Continuing anyway.
+2022-07-24T22:04:39,652  WARN RandomizingTimeDistanceTravelDisutilityFactory:117 There will be no routing randomness. The randomization of the travel disutility requires the travel time cost rate to be different than zero. Continuing anyway.
+2022-07-24T22:04:39,664  WARN PreProcessEuclidean:59 There are links with stored length smaller than their Euclidean distance in this network. Thus, A* cannot guarantee to calculate the least-cost paths between two nodes.
+2022-07-24T22:04:39,959  WARN Dijkstra:306 No route was found from node 3157954934 to node 30831171. 117. Some possible reasons:
+2022-07-24T22:04:39,961  WARN Dijkstra:307   * Network is not connected.  Run NetworkCleaner().
+2022-07-24T22:04:39,961  WARN Dijkstra:308   * Network for considered mode does not even exist.  Modes need to be entered for each link in network.xml.
+2022-07-24T22:04:39,962  WARN Dijkstra:309   * Network for considered mode is not connected to starting or ending point of route.  Setting insertingAccessEgressWalk to true may help.
+2022-07-24T22:04:39,962  WARN Dijkstra:310 This will now return null, but it may fail later with a null pointer exception.
+2022-07-24T22:04:39,965  WARN Dijkstra:306 No route was found from node 32867507 to node 2927694124. 103. Some possible reasons:
+2022-07-24T22:04:39,966  WARN Dijkstra:307   * Network is not connected.  Run NetworkCleaner().
+2022-07-24T22:04:39,966  WARN Dijkstra:308   * Network for considered mode does not even exist.  Modes need to be entered for each link in network.xml.
+2022-07-24T22:04:39,966  WARN Dijkstra:309   * Network for considered mode is not connected to starting or ending point of route.  Setting insertingAccessEgressWalk to true may help.
+2022-07-24T22:04:39,967  WARN Dijkstra:310 This will now return null, but it may fail later with a null pointer exception.
+2022-07-24T22:04:39,967 ERROR ParallelPersonAlgorithmUtils$ExceptionHandler:164 Thread PersonPrepareForSim.0 died with exception while handling events.
+java.lang.RuntimeException: No route found from node 32867507 to node 2927694124 by mode car.
+	at org.matsim.core.router.NetworkRoutingModule.calcRoute(NetworkRoutingModule.java:110) ~[matsim-14.0.jar:?]
+	at org.matsim.core.router.TripRouter.calcRoute(TripRouter.java:182) ~[matsim-14.0.jar:?]
+	at org.matsim.core.router.PlanRouter.run(PlanRouter.java:101) ~[matsim-14.0.jar:?]
+	at org.matsim.core.population.algorithms.PersonPrepareForSim.run(PersonPrepareForSim.java:219) ~[matsim-14.0.jar:?]
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils$PersonAlgoThread.run(ParallelPersonAlgorithmUtils.java:145) ~[matsim-14.0.jar:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+2022-07-24T22:04:39,963 ERROR ParallelPersonAlgorithmUtils$ExceptionHandler:164 Thread PersonPrepareForSim.1 died with exception while handling events.
+java.lang.RuntimeException: No route found from node 3157954934 to node 30831171 by mode car.
+	at org.matsim.core.router.NetworkRoutingModule.calcRoute(NetworkRoutingModule.java:110) ~[matsim-14.0.jar:?]
+	at org.matsim.core.router.TripRouter.calcRoute(TripRouter.java:182) ~[matsim-14.0.jar:?]
+	at org.matsim.core.router.PlanRouter.run(PlanRouter.java:101) ~[matsim-14.0.jar:?]
+	at org.matsim.core.population.algorithms.PersonPrepareForSim.run(PersonPrepareForSim.java:219) ~[matsim-14.0.jar:?]
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils$PersonAlgoThread.run(ParallelPersonAlgorithmUtils.java:145) ~[matsim-14.0.jar:?]
+	at java.lang.Thread.run(Thread.java:835) [?:?]
+2022-07-24T22:04:39,987 ERROR MatsimRuntimeModifications:75 Getting uncaught Exception in Thread main
+java.lang.RuntimeException: Exception while processing persons. Cannot guarantee that all persons have been fully processed.
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils.run(ParallelPersonAlgorithmUtils.java:120) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.PrepareForSimImpl.run(PrepareForSimImpl.java:170) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.NewControler.prepareForSim(NewControler.java:113) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:89) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.NewControler.run(NewControler.java:82) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.Controler.run(Controler.java:249) [matsim-14.0.jar:?]
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:86) [classes/:?]
+2022-07-24T22:04:39,987 ERROR MatsimRuntimeModifications:81 ERROR --- This is an unexpected shutdown!
+2022-07-24T22:04:39,988 ERROR MatsimRuntimeModifications:84 Shutdown possibly caused by the following Exception:
+java.lang.RuntimeException: Exception while processing persons. Cannot guarantee that all persons have been fully processed.
+	at org.matsim.core.population.algorithms.ParallelPersonAlgorithmUtils.run(ParallelPersonAlgorithmUtils.java:120) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.PrepareForSimImpl.run(PrepareForSimImpl.java:170) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.NewControler.prepareForSim(NewControler.java:113) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80) ~[matsim-14.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:69) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:52) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:89) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.NewControler.run(NewControler.java:82) [matsim-14.0.jar:?]
+	at org.matsim.core.controler.Controler.run(Controler.java:249) [matsim-14.0.jar:?]
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:86) [classes/:?]
+2022-07-24T22:04:40,062 ERROR MatsimRuntimeModifications:99 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2022-07-24T22:04:40,063 ERROR MatsimRuntimeModifications:100 ERROR --- results should not be used for further analysis.
+2022-07-24T22:04:40,064 ERROR MatsimRuntimeModifications:104 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
