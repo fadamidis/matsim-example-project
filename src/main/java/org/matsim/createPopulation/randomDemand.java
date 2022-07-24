@@ -24,7 +24,7 @@ import java.util.Random;
 public class randomDemand {
 
     private static final String NETWORK = "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim.xml";
-    private static final String PLANS =  "/Users/adfil/Documents/xMATSim/matsim-example-project/unterschleissheim/plans_1000.xml";
+    private static final String PLANS =  "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/plans_1000.xml";
 
     private static double COORD_X_MIN = 1284415.5280413607;
     private static double COORD_X_MAX = 1292384.8013316584;
@@ -50,8 +50,11 @@ public class randomDemand {
 
             Plan plan1 = factory.createPlan();
 
+            double x_home = returnRandom(COORD_X_MIN, COORD_X_MAX);
+            double y_home = returnRandom(COORD_Y_MIN, COORD_Y_MAX);
 
-            Activity home = factory.createActivityFromCoord("home", new Coord(returnRandom(COORD_X_MIN, COORD_X_MAX), returnRandom(COORD_Y_MIN, COORD_Y_MAX)));
+
+            Activity home = factory.createActivityFromCoord("home", new Coord(x_home, y_home));
             home.setEndTime(returnRandom(7*60*60, 8*60*60));
             plan1.addActivity(home);
 
@@ -64,6 +67,9 @@ public class randomDemand {
 
             Leg legToHome = factory.createLeg(TransportMode.car);
             plan1.addLeg(legToHome);
+
+            Activity home2 = factory.createActivityFromCoord("home", new Coord(x_home, y_home));
+            plan1.addActivity(home2);
 
             person.addPlan(plan1);
 
