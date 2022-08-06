@@ -24,7 +24,7 @@ import java.util.Random;
 public class randomDemand {
 
     private static final String NETWORK = "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim.xml";
-    private static final String PLANS =  "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/plans_1000.xml";
+    private static final String PLANS =  "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/plans_10000.xml";
 
     private static double COORD_X_MIN = 1284415.5280413607;
     private static double COORD_X_MAX = 1292384.8013316584;
@@ -43,7 +43,7 @@ public class randomDemand {
 
         PopulationFactory factory = emptyPopulation.getFactory();
 
-        for (int i=1; i <= 1000; i+=1 ){
+        for (int i=1; i <= 10000; i+=1 ){
 
             System.out.println("Creating person #" + i);
             Person person = factory.createPerson(Id.createPersonId(i));

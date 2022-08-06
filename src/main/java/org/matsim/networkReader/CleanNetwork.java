@@ -7,8 +7,8 @@ public class CleanNetwork {
 
         NetworkCleaner cleaner = new NetworkCleaner();
 
-        cleaner.run("/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim.xml",
-                "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim_clean.xml");
+        cleaner.run("/Users/adfil/Desktop/network_ush.xml",
+                "/Users/adfil/Desktop/network_ush_clean.xml");
 
     }
 

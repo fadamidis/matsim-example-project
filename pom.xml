@@ -53,6 +53,10 @@
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
+		<repository>
+			<id>pt2matsim</id>
+			<url>https://repo.matsim.org/repository/matsim/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -147,6 +151,11 @@
 			<groupId>com.github.Janekdererste</groupId>
 			<artifactId>super-sonic-osm-network-reader</artifactId>
 			<version>0.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.matsim</groupId>
+			<artifactId>pt2matsim</artifactId>
+			<version>22.3</version>
 		</dependency>
 
 		<!--Dependencies from where stated above to here are added as a service; they can be removed if you don't need them-->

@@ -4,15 +4,15 @@
 <config>
 
     <module name="network">
-        <param name="inputNetworkFile" value="network_unterschleissheim_clean.xml" />
+        <param name="inputNetworkFile" value="network_unterschleissheim_bus.xml" />
     </module>
 
     <module name="plans">
-        <param name="inputPlansFile" value="plans_1000.xml" />
+        <param name="inputPlansFile" value="plans_10000.xml" />
     </module>
 
     <module name="controler">
-        <param name="outputDirectory" value="./unterschleissheim/plans1000" />
+        <param name="outputDirectory" value="./unterschleissheim/plans10000" />
         <param name="firstIteration" value="0" />
         <param name="lastIteration" value="10" />
         <param name="mobsim" value="qsim"/>
