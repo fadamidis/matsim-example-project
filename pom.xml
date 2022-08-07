@@ -157,6 +157,11 @@
 			<artifactId>pt2matsim</artifactId>
 			<version>22.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>accessibility</artifactId>
+			<version>12.0</version>
+		</dependency>
 
 		<!--Dependencies from where stated above to here are added as a service; they can be removed if you don't need them-->
 
