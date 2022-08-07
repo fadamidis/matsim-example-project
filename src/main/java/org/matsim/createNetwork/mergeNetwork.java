@@ -23,7 +23,7 @@ public class mergeNetwork {
 
         Network mergedNetwork = NetworkUtils.createNetwork();
 
-        // new MatsimNetworkReader(scenario.getNetwork()).readFile("/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim_clean.xml");
+        new MatsimNetworkReader(scenario.getNetwork()).readFile("/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim_clean.xml");
 
         MergeNetworks netMerger = new MergeNetworks();
 
