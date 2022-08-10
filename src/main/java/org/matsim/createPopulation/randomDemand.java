@@ -23,14 +23,14 @@ import java.util.Random;
 
 public class randomDemand {
 
-    private static final String NETWORK = "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_unterschleissheim.xml";
+    private static final String NETWORK = "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/network_car_wgs84_clean.xml";
     private static final String PLANS =  "/Users/adfil/Documents/MATSim/matsim-example-project/unterschleissheim/plans_10000.xml";
 
-    private static double COORD_X_MIN = 1284415.5280413607;
-    private static double COORD_X_MAX = 1292384.8013316584;
+    private static double COORD_X_MIN = 11.5446156;
+    private static double COORD_X_MAX = 11.6109164;
 
-    private static double COORD_Y_MIN = 6151073.180293039;
-    private static double COORD_Y_MAX = 6158756.397369139;
+    private static double COORD_Y_MIN = 48.2661533;
+    private static double COORD_Y_MAX = 48.3004814;
 
 
     public static void main (String[] args){
