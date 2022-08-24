@@ -57,7 +57,7 @@ public class RunMatsim{
 
 		Config config;
 		if ( args==null || args.length==0 || args[0]==null ){
-			config = ConfigUtils.loadConfig( "scenarios/testfeldUnterschleissheim/config.xml" );
+			config = ConfigUtils.loadConfig( "/Users/adfil/Documents/MATSim/matsim-example-project/scenarios/testfeldUnterschleissheimPt/configPt.xml" );
 		} else {
 			config = ConfigUtils.loadConfig( args );
 		}

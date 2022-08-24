@@ -4,7 +4,7 @@
 <config>
 
     <module name="network">
-        <param name="inputNetworkFile" value="network_unterschleissheim_bus.xml" />
+        <param name="inputNetworkFile" value="network_merged_wgs84.xml" />
     </module>
 
     <module name="plans">

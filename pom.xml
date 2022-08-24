@@ -162,10 +162,15 @@
 			<artifactId>accessibility</artifactId>
 			<version>12.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.matsim.contrib</groupId>
+			<artifactId>sbb-extensions</artifactId>
+			<version>13.0</version>
+		</dependency>
+	</dependencies>
 
 		<!--Dependencies from where stated above to here are added as a service; they can be removed if you don't need them-->
 
-	</dependencies>
 
 	<build>
 		<plugins>
