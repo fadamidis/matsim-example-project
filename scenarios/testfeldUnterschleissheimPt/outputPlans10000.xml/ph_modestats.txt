@@ -1,0 +1,12 @@
+Iteration	car_travel	car_wait	stageActivity_travel	stageActivity_wait
+0	10741	0	0	0
+1	9841	0	0	0
+2	9720	0	0	0
+3	9223	0	0	0
+4	9120	0	0	0
+5	8978	0	0	0
+6	8803	0	0	0
+7	8688	0	0	0
+8	8548	0	0	0
+9	8485	0	0	0
+10	8353	0	0	0
